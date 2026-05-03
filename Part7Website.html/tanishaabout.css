@@ -1,0 +1,113 @@
+:root{
+  --black:#000000; 
+  --deep-red:#1D0515;
+  --second-deep:#350616;
+  --med-red:#550816;
+  --send-li-red:#6A040F;
+  --frst-li-red:#9A0D1B;
+  --pink:#FFDFD9;
+  --white:#FFFFFF;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+body{
+  margin: 0%;
+  scroll-behavior: smooth;
+  background:linear-gradient(to bottom, var(--black)0%,var(--second-deep)100%);
+  }
+
+
+
+.main {
+  display:grid;
+  height:100vh;
+  width:1000;
+grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+grid-template-rows: 0.2fr 1fr 1fr 1fr 1fr 1fr 1fr;
+grid-template-areas: "header header header header header"
+"about about about about about"
+"about about about about about"
+"about about about about about"
+"foot foot foot foot foot";
+;
+}
+#header{
+font-family: "Cinzel", serif;
+background:linear-gradient(to bottom, var(--black)0%,var(--second-deep)100%);
+grid-area: header;
+height: 60px;
+position: sticky;
+padding-bottom: 1px;
+}
+
+#header img {
+  float:left;
+  opacity: 0.5;
+
+}
+#header img:hover{
+ opacity: 100%;
+}
+#header ul{
+  float:right;
+  list-style:none;
+  display:flex;
+  gap: 2rem;
+  margin: 1rem;
+  color:var(--pink)
+}
+
+header nav{
+transition: transform 0.4 ease;
+text-decoration: none;
+}
+.about:hover{
+  transform:translateY(-2px);
+  text-decoration:underline;
+}
+.news:hover{
+  transform:translateY(-2px);
+  text-decoration:underline;
+}
+.contacts:hover{
+  transform:translateY(-2px);
+  text-decoration:underline;}
+  a:hover{
+  color: var(--white);
+}
+
+#about {
+background:linear-gradient(to bottom,rgba(53,6,22,.7) 30%, rgba(0,0,0,1.0) 100%),;
+grid-area:about;
+height: 750px;
+}
+#about img{
+margin-top: 50px;
+margin-left: 850px;
+}
+#about h2{
+  color:white;
+  float: right;
+  margin-top: 10px;
+ margin-right: 450px;
+}
+
+footer{
+background:linear-gradient(to bottom, var(--deep-red)0%,var(--send-li-red)100%);
+grid-area:foot;
+height: 200px;
+border-color: #9A0D1B;
+text-align: center;
+color: var(--white);
+}
+a:link{
+  color:var(--white)
+}
+a:active{
+  color:var(--white)
+}
+a:visited{
+  color:var(--white)
+}
